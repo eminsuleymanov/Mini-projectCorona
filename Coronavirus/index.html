@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Css/bootstrap.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <title>Coronavirus</title>
+</head>
+<body>
+    <header>
+        <section class="navbar">
+            <div class="container">
+                <div class="nav bsnav bsnav-sticky bsnav-sticky-slide ">
+                    <a href="index.html" class="logo">
+                        <img src="http://demo9.steelthemes.com/html/corano-v-1.3/assets/image/home-4-logo.png" alt="" >
+                    </a>
+                    <div class="navs d-flex ">
+                        <ul class="allnav d-flex align-items-center">
+                            <li class="nav-item dropdown ">
+                                <a href="">HOME
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><button class="dropdown-item" type="button">Action</button></li>
+                                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                  </ul>
+                            </li>
+                            <li>
+                                <a href="">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="">PREVENTION
+                                    <i class="fa-solid fa-chevron-down"></i>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">DOCTORS </a>
+                            </li>
+                            <li>
+                                <a href="">FAQ's </a>
+                            </li>
+                            <li>
+                                <a href="">BLOG
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">SHOP
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">CONTACT</a>
+                            </li>
+                        </ul>
+                        <div class="rightnav">
+                            <a href="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div id="map">
+        </div>
+        <div class="all-info">
+
+            <div class="box country-inp ">
+                <form name="srch">
+                    <input type="text" id="search" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                </form>
+                <p class="invalid-value d-none">Wrong Country Name</p>
+                <i class="fas fa-search"></i>
+            
+            </div>
+        
+            <div id="total_cases">
+                <!-- <p class="stat">World</p> -->
+                <p class="case_title">Total Cases</p>
+                <h4 class="case_track infected"></h4>
+            </div>
+            <div id="active_cases">
+                <p class="case_title">Active Cases</p>
+                <h4 class="case_track actives"></h4>
+            </div>
+            <div id="deaths">
+                <p class="case_title">Deaths</p>
+                <h4 class="case_track deaths"></h4>
+            </div>
+            <div id="recovered">
+                <p class="case_title">Recovered</p>
+                <h4 class="case_track recovered"></h4>
+            </div>
+        </div>
+    </main>
+
+    <script src="/Js/main.js"></script>
+</body>
+</html>
