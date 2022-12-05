@@ -8,7 +8,7 @@ const options = {
 	}
 };
 
-fetch('https://corona-virus-world-and-india-data.p.rapidapi.com/api_india_timeline', options)
+fetch('https://corona-virus-world-and-india-data.p.rapidapi.com/api', options)
 	.then(response => response.json())
 	.then(data => {
 			console.log(data)
@@ -26,20 +26,22 @@ fetch('https://corona-virus-world-and-india-data.p.rapidapi.com/api_india_timeli
 			let errorTxt = document.querySelector('.invalid-value')
 
 
+			inp.addEventListener("keyup", e =>{
+				const value = e.target.value
+				data.countries_stat.forEach( stat => {
+					if (stat.country_name.toLocaleLowerCase() == value.toLocaleLowerCase()) {
+						console.log(stat.country_name);
+						statName.innerHTML=stat.country_name
+						active_cases.innerHTML=stat.active_cases
+						total_cases.innerHTML=stat.cases
+						deaths.innerHTML=stat.deaths
+						recovered.innerHTML=stat.total_recovered
+					}
+					
 
-			data.countries_stat.forEach( stat => {
-				if (stat.country_name.toLocaleLowerCase() == inp.value.toLocaleLowerCase()) {
-					console.log(stat.country_name);
-					errorTxt.classList.add('d-none')
-					statName.innerHTML=stat.country_name
-					active_cases.innerHTML=stat.active_cases
-					total_cases.innerHTML=stat.total_cases
-					deaths.innerHTML=stat.total_deaths
-					recovered.innerHTML=stat.total_recovered
-				}
-				else{
-					errorTxt.classList.add('d-block')
-				}
+			})	
+			
+				
 			
 				
 			});

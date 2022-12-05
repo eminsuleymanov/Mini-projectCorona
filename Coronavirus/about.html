@@ -76,37 +76,34 @@
     <main>
         <div id="map">
         </div>
-        <div class="all-info">
-
-            <div class="box country-inp ">
-                <form name="srch">
-                    <input type="text" id="search" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-                </form>
-                <p class="invalid-value d-none">Wrong Country Name</p>
-                <i class="fas fa-search"></i>
+        <section style="margin: 50px 100px ;">
             
+            <h1 class="heading">Countries with >100,000 deaths</h1>
+            <div class="tbl-header">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Country</th>
+                    <th>Cases</th>
+                    <th>Deaths</th>
+                    <th>Recovered</th>
+                  </tr>
+                </thead>
+              </table>
             </div>
+            <div class="tbl-content">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                  
+                  
+                </tbody>
+              </table>
+            </div>
+          </section>
         
-            <div id="total_cases">
-                <h3 class="stat">World</h3>
-                <p class="case_title">Total Cases</p>
-                <h4 class="case_track infected"></h4>
-            </div>
-            <div id="active_cases">
-                <p class="case_title">Active Cases</p>
-                <h4 class="case_track actives"></h4>
-            </div>
-            <div id="deaths">
-                <p class="case_title">Deaths</p>
-                <h4 class="case_track deaths"></h4>
-            </div>
-            <div id="recovered">
-                <p class="case_title">Recovered</p>
-                <h4 class="case_track recovered"></h4>
-            </div>
-        </div>
     </main>
 
-    <script src="/Js/main.js"></script>
+    <script src="/Js/countries.js"></script>
 </body>
 </html>
